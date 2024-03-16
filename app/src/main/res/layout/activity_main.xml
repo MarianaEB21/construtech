@@ -36,6 +36,8 @@
         android:textColorHighlight="@color/yellow"
         android:textColorLink="@color/yellow"
         app:cornerRadius="5dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -52,6 +54,8 @@
         android:textColorHighlight="@color/yellow"
         android:textColorLink="@color/yellow"
         app:cornerRadius="5dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
