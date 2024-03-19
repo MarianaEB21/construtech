@@ -29,12 +29,17 @@ class MateriaisActivity : AppCompatActivity() {
         val cardMadeira: CardView = findViewById<CardView>(R.id.card_madeira)
 
         cardMadeira.setOnClickListener {
-            voltarTela()
+            goToInfoTela()
         }
     }
 
     private fun voltarTela() {
         val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun goToInfoTela() {
+        val intent = Intent(this, InfoActivity::class.java)
         startActivity(intent)
     }
 }
