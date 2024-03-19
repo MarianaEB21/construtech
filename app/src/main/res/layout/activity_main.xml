@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_cabecalho"
         app:layout_constraintVertical_bias="0.056" />
 
     <Button
@@ -49,7 +49,7 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="@color/yellow"
         android:elevation="10dp"
         android:stateListAnimator="@null"
@@ -84,9 +84,9 @@
 
     <ImageView
         android:id="@+id/menu"
-        android:layout_width="60dp"
+        android:layout_width="50dp"
         android:layout_height="65dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="@+id/toolbar_cabecalho"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img13" />
@@ -97,7 +97,6 @@
         android:layout_height="65dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="0dp"
-
         app:layout_constraintStart_toStartOf="@+id/toolbar_cabecalho"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img1" />
