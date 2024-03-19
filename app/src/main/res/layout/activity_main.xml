@@ -82,14 +82,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_cabecalho"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img13" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="60dp"
         android:layout_height="65dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_titulo"
+        android:layout_marginTop="0dp"
+
         app:layout_constraintStart_toStartOf="@+id/toolbar_cabecalho"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img1" />
