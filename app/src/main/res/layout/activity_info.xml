@@ -5,8 +5,8 @@
     android:id="@+id/info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoActivity"
-    android:background="@color/gray">
+    android:background="@color/gray"
+    tools:context=".InfoActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_cabecalho"
@@ -16,6 +16,7 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,12 +31,49 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="60dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginEnd="191dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout"
         app:layout_constraintStart_toStartOf="@+id/toolbar_cabecalho"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img1" />
 
+    <TextView
+        android:id="@+id/menu_breadcrumb_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="home > materiais > madeira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_cabecalho" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_cabecalho">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_madeira"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="124dp"
+        android:elevation="-1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_madeira" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
