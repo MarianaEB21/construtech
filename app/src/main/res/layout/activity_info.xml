@@ -18,7 +18,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="Logotipo Construtech"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img1" />
+    </androidx.appcompat.widget.Toolbar>
 
     <ImageView
         android:id="@+id/menu"
@@ -28,18 +37,6 @@
         app:layout_constraintEnd_toEndOf="@+id/toolbar_cabecalho"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img13" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="0dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="191dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_cabecalho"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img1" />
 
     <TextView
         android:id="@+id/menu_breadcrumb_info"
@@ -52,28 +49,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_cabecalho" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_header_background"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="@color/light_gray"
+        android:translationZ="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_breadcrumb_info" />
+
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        app:layout_constraintEnd_toStartOf="@+id/logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_cabecalho">
-    </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/img_madeira"
-        android:layout_width="150dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="124dp"
-        android:elevation="-1dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="25dp"
+        android:translationZ="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_madeira" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar_cabecalho">
+
+        <ImageView
+            android:id="@+id/img_madeira"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="Imagem do material"
+            app:srcCompat="@drawable/img_madeira" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
