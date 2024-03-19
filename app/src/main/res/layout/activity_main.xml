@@ -11,8 +11,9 @@
     <TextView
         android:id="@+id/txt_titulo"
         android:layout_width="358dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="620dp"
         android:text="O que você deseja consultar hoje?"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -20,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.056" />
 
     <Button
@@ -28,7 +29,7 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/yellow"
         android:elevation="10dp"
@@ -47,9 +48,8 @@
         android:id="@+id/btn_legislacao"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="10dp"
-
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
         android:backgroundTint="@color/yellow"
         android:elevation="10dp"
         android:stateListAnimator="@null"
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="15dp"
         android:text="Mais visitados"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_materiais" />
@@ -82,16 +82,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_cabecalho"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img13" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+
+        app:layout_constraintStart_toStartOf="@+id/toolbar_cabecalho"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/card_acabamentos"
-        android:layout_width="120dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_gray"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mais_visitados"
-        android:backgroundTint="@color/light_gray">
+        app:layout_constraintTop_toBottomOf="@+id/txt_mais_visitados">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -100,12 +120,12 @@
 
             <ImageView
                 android:id="@+id/img2"
-                android:layout_width="104dp"
-                android:layout_height="73dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/img2" />
 
@@ -115,8 +135,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="8dp"
-                android:textAlignment="center"
                 android:text="Acabamentos"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/img2"
@@ -127,12 +147,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_orcamentos"
-        android:layout_width="120dp"
-        android:layout_height="112dp"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/light_gray"
         android:padding="10dp"
-        android:layout_marginLeft="5dp"
         app:layout_constraintStart_toEndOf="@+id/card_acabamentos"
         app:layout_constraintTop_toBottomOf="@+id/txt_mais_visitados">
 
@@ -142,9 +162,9 @@
 
             <ImageView
                 android:id="@+id/img3"
-                android:layout_width="104dp"
-                android:layout_height="73dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -163,6 +183,412 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/img3"
                 app:layout_constraintTop_toBottomOf="@+id/img3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_para_voce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Para Você"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_acabamentos" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_marcenaria"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_para_voce">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img4" />
+
+            <TextView
+                android:id="@+id/txt_marcenaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="Marcenaria"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/img4"
+                app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_leis_construtivas"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_marcenaria"
+        app:layout_constraintTop_toBottomOf="@+id/txt_para_voce">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img5" />
+
+            <TextView
+                android:id="@+id/txt_leis_construtivas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="Leis    Construtivas"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img5"
+                app:layout_constraintTop_toBottomOf="@+id/img5"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_leis_acessibilidade"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_leis_construtivas"
+        app:layout_constraintTop_toBottomOf="@+id/txt_para_voce">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img8" />
+
+            <TextView
+                android:id="@+id/txt_leis_acessibilidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:text="Leis de Acessibilidade"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img8"
+                app:layout_constraintTop_toBottomOf="@+id/img8"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_protocolo_processo"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_marcenaria">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img10" />
+
+            <TextView
+                android:id="@+id/txt_protocolo_processo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="Protocolo de Processos"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/img10"
+                app:layout_constraintTop_toBottomOf="@+id/img10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_protocolo_sp"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_protocolo_processo"
+        app:layout_constraintTop_toBottomOf="@+id/card_leis_construtivas">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img11" />
+
+            <TextView
+                android:id="@+id/txt_protocolo_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="Protocolo de Processos - SP"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img11"
+                app:layout_constraintTop_toBottomOf="@+id/img11"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_licenca_funcionamento"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_protocolo_sp"
+        app:layout_constraintTop_toBottomOf="@+id/card_leis_acessibilidade">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img12"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img12" />
+
+            <TextView
+                android:id="@+id/txt_licenca_funcionamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:text="Licença de Funcionamento"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img12"
+                app:layout_constraintTop_toBottomOf="@+id/img12"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_incendio"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_protocolo_processo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img6" />
+
+            <TextView
+                android:id="@+id/txt_incendio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="IT contra Incendio"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/img6"
+                app:layout_constraintTop_toBottomOf="@+id/img6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_patrimonio_historico"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_incendio"
+        app:layout_constraintTop_toBottomOf="@+id/card_protocolo_sp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img7" />
+
+            <TextView
+                android:id="@+id/txt_patrimonio_historico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:text="Patrimonio Histórico"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img7"
+                app:layout_constraintTop_toBottomOf="@+id/img7"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_preservacaoambiental"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/card_patrimonio_historico"
+        app:layout_constraintTop_toBottomOf="@+id/card_licenca_funcionamento">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img9" />
+
+            <TextView
+                android:id="@+id/txt_preservacao_ambiental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:text="Preservação Ambiental"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img9"
+                app:layout_constraintTop_toBottomOf="@+id/img9"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
