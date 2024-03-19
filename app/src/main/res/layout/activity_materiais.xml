@@ -48,8 +48,8 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_titulo">
         <androidx.cardview.widget.CardView
             android:id="@+id/card_madeira"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
             android:layout_marginStart="10dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
@@ -61,8 +61,8 @@
 
                 <ImageView
                     android:id="@+id/img_madeira"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -82,9 +82,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_aco"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -96,8 +96,8 @@
 
                 <ImageView
                     android:id="@+id/img_aco"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -117,9 +117,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_concreto"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -131,8 +131,8 @@
 
                 <ImageView
                     android:id="@+id/img_concreto"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -159,8 +159,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_vidro"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
             android:layout_marginStart="8dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
@@ -173,8 +173,8 @@
 
                 <ImageView
                     android:id="@+id/img_vidro"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -194,9 +194,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_concregrama"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -208,8 +208,8 @@
 
                 <ImageView
                     android:id="@+id/img_concregrama"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -229,9 +229,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_bambu"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -242,8 +242,8 @@
 
                 <ImageView
                     android:id="@+id/img_bambu"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -271,8 +271,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_marmore"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
             android:layout_marginStart="8dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
@@ -285,8 +285,8 @@
 
                 <ImageView
                     android:id="@+id/img_marmore"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -306,9 +306,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_plastico"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -320,8 +320,8 @@
 
                 <ImageView
                     android:id="@+id/img_plastico"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -341,9 +341,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_drywall"
-            android:layout_width="120dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="2dp"
             android:backgroundTint="@color/light_gray"
             android:layout_marginTop="38dp"
             android:padding="10dp"
@@ -354,8 +354,8 @@
 
                 <ImageView
                     android:id="@+id/img_drywall"
-                    android:layout_width="104dp"
-                    android:layout_height="73dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -390,7 +390,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linha_3"
-        android:layout_marginTop="67dp"/>
+        android:layout_marginTop="35dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
