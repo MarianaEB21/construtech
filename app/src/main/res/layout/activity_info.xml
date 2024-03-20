@@ -57,7 +57,18 @@
         android:backgroundTint="@color/light_gray"
         android:translationZ="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_breadcrumb_info" />
+        app:layout_constraintTop_toBottomOf="@+id/menu_breadcrumb_info" >
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Madeira" />
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -73,10 +84,129 @@
             android:id="@+id/img_madeira"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            app:layout_constraintEnd_toEndOf="parent"
             android:contentDescription="Imagem do material"
+            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/img_madeira" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_utilizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:text="Utilização na Construção"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/txt_utilizacao_descricao"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="Amplamente usada em várias estruturas, desde residenciais até comerciais e industriais.
+Presente em projetos de infraestrutura, como pontes e estradas."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_utilizacao" />
+
+    <TextView
+        android:id="@+id/txt_propriedades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:text="Propriedades Construtivas"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_utilizacao_descricao" />
+
+    <TextView
+        android:id="@+id/txt_propriedades_descricao"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="Versatilidade, leveza e resistência.
+Boa relação resistência-peso, permitindo estruturas eficientes.
+Facilidade de trabalhar, permitindo construção rápida e flexível."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_propriedades" />
+
+    <TextView
+        android:id="@+id/txt_resistencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:text="Resistência ao Fogo"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_propriedades_descricao"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_reistencia_descricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Varia de acordo com o tipo de madeira e tratamento.
+Madeiras densas e resinosas têm maior resistência.
+Tratamentos com retardantes de fogo podem aumentar a resistência.
+Mesmo com tratamentos, não é incombustível e pode queimar em temperaturas elevadas."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resistencia"
+         />
+
+    <TextView
+        android:id="@+id/txt_tecnicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:text="Técnicas para Melhorar a Resistencia"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reistencia_descricao"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_tecnicas_descricao"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Aplicação de revestimentos intumescentes.
+Detalhes construtivos que reduzem a propagação do fogo.
+Uso de madeira laminada colada ou peças de madeira maciça com seções transversais maiores."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tecnicas"
+         />
+
+    <Button
+        android:id="@+id/btn_voltar_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="Voltar"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/yellow"
+        android:textColorLink="@color/yellow"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tecnicas_descricao"
+        android:layout_marginTop="2dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
